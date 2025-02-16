@@ -1,0 +1,28 @@
+/* Home.css */
+.home {
+  text-align: center;
+  padding: 80px 20px;
+  animation: fadeIn 1s ease-out; /* Fade-in animation */
+}
+
+.home h1 {
+  color: #5d4e76; /* Soft purple */
+  font-size: 3rem;
+}
+
+.home p {
+  font-size: 1.2rem;
+  color: #5d4e76;
+  margin-top: 20px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,42 @@
+/* About.css */
+.about {
+  background: #f5d0ff; /* Soft pastel pink background */
+  padding: 60px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1.5s ease-out;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  color: #5d4e76;
+  text-align: center;
+}
+
+.about p {
+  font-size: 1.2rem;
+  color: #666;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.about ul {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.about ul li {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

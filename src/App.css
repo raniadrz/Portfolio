@@ -1,0 +1,170 @@
+/* General styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #f3c0c0, #f5d0ff); /* Pastel gradient background */
+  color: #333;
+}
+
+h1, h2 {
+  color: #5d4e76; /* Soft purple color for headers */
+}
+
+/* Header styles */
+header {
+  background-color: #5d4e76; /* Soft purple background */
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #f5d0ff; /* Pastel pink hover effect */
+}
+
+/* Section styles */
+section {
+  padding: 40px;
+  margin: 20px;
+  animation: fadeIn 1s ease-out; /* Animation to fade sections in */
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #5d4e76; /* Soft purple for headings */
+}
+
+p, li {
+  color: #666;
+  line-height: 1.6;
+}
+
+a {
+  color: #5d4e76;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #f5d0ff; /* Hover color change */
+}
+
+/* Buttons and links */
+button {
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: #f5d0ff;
+  color: #5d4e76;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #f3c0c0; /* Pastel pink on hover */
+  color: white;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Project Cards */
+.project-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h3 {
+  color: #5d4e76;
+}
+
+.project-card p {
+  color: #888;
+}
+
+.project-card a {
+  color: #5d4e76;
+  text-decoration: none;
+}
+
+.project-card a:hover {
+  color: #f5d0ff;
+}
+
+/* Contact Section */
+.contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact li {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* Add dark background variation for a darker theme */
+.dark-theme {
+  background: linear-gradient(135deg, #333, #555);
+  color: white;
+}
+
+.dark-theme h1, .dark-theme h2 {
+  color: #fff;
+}
+
+.dark-theme button {
+  background-color: #555;
+  color: #fff;
+}
+
+.dark-theme button:hover {
+  background-color: #333;
+}
+
+/* Footer (optional) */
+footer {
+  background-color: #5d4e76;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+}
