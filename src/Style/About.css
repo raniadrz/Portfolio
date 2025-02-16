@@ -12,6 +12,10 @@
   color: #5d4e76;
   text-align: center;
 }
+.about h3 {
+  color: #5d4e76;
+  text-align: center;
+}
 
 .about p {
   font-size: 1.2rem;
@@ -21,13 +25,13 @@
 }
 
 .about ul {
-  text-align: center;
-  margin-top: 20px;
+  text-align: left;
+  margin-top: 30px;
 }
 
 .about ul li {
   font-size: 1.1rem;
-  margin: 10px 0;
+  margin: 10px 10;
 }
 
 @keyframes fadeIn {
