@@ -9,8 +9,9 @@ function Contact() {
       <p>Feel free to reach out to me:</p>
       <ul>
         <li>Email: drizirania@gmail.com</li>
-        <li>LinkedIn: <a href="https://www.linkedin.com/in/ourania-ntrizi/" target="_blank" rel="noopener noreferrer">your-profile</a></li>
-        <li>GitHub: <a href="https://github.com/raniadrz" target="_blank" rel="noopener noreferrer">yourusername</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/ourania-ntrizi/" target="_blank" rel="noopener noreferrer">My Linkedin Profile</a></li>
+        <li>GitHub: <a href="https://github.com/raniadrz" target="_blank" rel="noopener noreferrer">My Github profile</a></li>
+        <li>Download CV: <a href={require('./OuraniaNtriziCV2025Ver.pdf')} download>My CV</a></li>
       </ul>
     </section>
   );
