@@ -1,23 +1,20 @@
 /* Projects.css */
 .projects {
-  background: #f3c0c0; /* Soft pastel pink background */
-  padding: 60px 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  animation: fadeIn 1.5s ease-out;
+  background-color: #f0f0f0; /* Light gray background */
+  padding: 20px; /* Add padding for spacing */
+  border-radius: 8px; /* Rounded corners */
+  font-family: 'Courier New', Courier, monospace; /* Monospaced font */
 }
 
 .projects h2 {
-  text-align: center;
-  font-size: 2.5rem;
-  color: #5d4e76;
+  color: #5d4e76; /* Soft purple color for headings */
 }
 
 .project-list {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 30px;
+  flex-wrap: wrap; /* Allow wrapping of project cards */
+  gap: 20px; /* Space between project cards */
+  justify-content: center; /* Center the project cards */
 }
 
 @keyframes fadeIn {
@@ -28,5 +25,45 @@
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+.pagination {
+  display: flex; /* Use flexbox for alignment */
+  justify-content: center; /* Center the buttons horizontally */
+  margin-top: 20px; /* Add some space above the pagination */
+  flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+}
+
+.pagination button {
+  margin: 0 3px; /* Reduce space between buttons */
+  padding: 8px 12px; /* Adjust padding for smaller touch targets */
+  font-size: 0.9rem; /* Slightly smaller font size for mobile */
+  border: 1px solid transparent; /* Add border for button */
+  background-color: #5d4e76; /* Button background color */
+  color: white; /* Button text color */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Change cursor on hover */
+  transition: background-color 0.3s, border 0.3s; /* Smooth transitions */
+}
+
+.pagination button:hover {
+  background-color: #4a3b5d; /* Darker shade on hover */
+}
+
+.pagination button:disabled {
+  background-color: #ccc; /* Gray background for disabled buttons */
+  cursor: not-allowed; /* Change cursor for disabled buttons */
+}
+
+.pagination button.active {
+  border: 1px solid #007bff; /* Highlight active button */
+  background-color: white; /* Active button background */
+  color: #5d4e76; /* Active button text color */
+}
+@media (max-width: 480px) {
+  .pagination button {
+    padding: 6px 10px; /* Smaller padding for very small screens */
+    font-size: 0.8rem; /* Smaller font size for very small screens */
   }
 }

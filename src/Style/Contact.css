@@ -1,27 +1,28 @@
 /* Contact.css */
 .contact {
-    background: #f5d0ff; /* Pastel pink background */
-    padding: 60px 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f0f0f0; /* Light gray background */
+    padding: 20px; /* Add padding for spacing */
+    border-radius: 8px; /* Rounded corners */
+    font-family: 'Courier New', Courier, monospace; /* Monospaced font */
     animation: fadeIn 1.5s ease-out;
   }
   
   .contact h2 {
+    color: #5d4e76; /* Soft purple color for headings */
     font-size: 2.5rem;
-    color: #5d4e76;
     text-align: center;
   }
   
   .contact ul {
-    list-style: none;
-    padding: 0;
+    list-style-type: none; /* Remove default list style */
+    padding: 0; /* Remove padding */
     text-align: center;
   }
   
-  .contact li {
+  .contact ul li {
+    margin: 10px 0; /* Space between list items */
+    color: #333; /* Darker text for better readability */
     font-size: 1.2rem;
-    margin-bottom: 10px;
   }
   
   .contact a {

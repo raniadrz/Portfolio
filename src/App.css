@@ -168,3 +168,43 @@ footer {
   padding: 15px;
   font-size: 0.9rem;
 }
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+  body {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  header {
+    padding: 10px; /* Reduce header padding */
+  }
+
+  header nav ul {
+    flex-direction: column; /* Stack navigation items vertically */
+  }
+
+  header nav ul li {
+    margin: 5px 0; /* Adjust margin for list items */
+  }
+
+  section {
+    padding: 20px; /* Reduce section padding */
+  }
+
+  button {
+    width: 100%; /* Make buttons full width */
+    font-size: 16px; /* Adjust font size */
+  }
+
+  .project-card {
+    margin: 5px 0; /* Adjust margin for project cards */
+  }
+  
+  h2 {
+    font-size: 1.5rem; /* Adjust heading size */
+  }
+  
+  p, li {
+    font-size: 0.9rem; /* Adjust font size for paragraphs and list items */
+  }
+}

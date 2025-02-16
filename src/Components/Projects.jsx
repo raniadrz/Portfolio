@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ProjectCard from './ProjectCard';
 
 import '../Style/Projects.css';
@@ -20,16 +20,87 @@ function Projects() {
       link: "https://github.com/raniadrz/myProject",
       demo: "https://mypetshop.vercel.app/"
     },
+    {
+    title: "Project App",
+    description: "Description ",
+    tech: "tech",
+    link: "https://github.com/",
+    demo: "https://vercel.app/"
+    },
+    {
+      title: "Project App",
+      description: "Description ",
+      tech: "tech",
+      link: "https://github.com/",
+      demo: "https://vercel.app/"
+      },
+      {
+        title: "Project App",
+        description: "Description ",
+        tech: "tech",
+        link: "https://github.com/",
+        demo: "https://vercel.app/"
+        },
+        {
+          title: "Project App",
+          description: "Description ",
+          tech: "tech",
+          link: "https://github.com/",
+          demo: "https://vercel.app/"
+          },
+          {
+            title: "Project App",
+            description: "Description ",
+            tech: "tech",
+            link: "https://github.com/",
+            demo: "https://vercel.app/"
+            },
+    
+    
     // Add more projects as needed
   ];
+
+  const [currentPage, setCurrentPage] = useState(1);
+  const projectsPerPage = 3;
+
+  const indexOfLastProject = currentPage * projectsPerPage;
+  const indexOfFirstProject = indexOfLastProject - projectsPerPage;
+  const currentProjects = projects.slice(indexOfFirstProject, indexOfLastProject);
+
+  const totalPages = Math.ceil(projects.length / projectsPerPage);
+
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   return (
     <section id="projects" className="projects">
       <h2>My Projects</h2>
       <div className="project-list">
-        {projects.map((project, index) => (
+        {currentProjects.map((project, index) => (
           <ProjectCard key={index} {...project} />
         ))}
+      </div>
+      <div className="pagination">
+        <button 
+          onClick={() => paginate(currentPage - 1)} 
+          disabled={currentPage === 1}
+        >
+          Previous
+        </button>
+        {Array.from({ length: totalPages }, (_, index) => (
+          <button 
+            key={index} 
+            onClick={() => paginate(index + 1)} 
+            className={currentPage === index + 1 ? 'active' : ''}
+          >
+            {index + 1}
+          </button>
+        ))}
+        <button 
+          onClick={() => paginate(currentPage + 1)} 
+          disabled={currentPage === totalPages}
+        >
+          Next
+        </button>
       </div>
     </section>
   );

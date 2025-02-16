@@ -1,0 +1,78 @@
+.seminars {
+    background-color: #f0f0f0; /* Light gray background for consistency */
+    padding: 2% 10%; /* Adjusted padding to reduce top and bottom space */
+    border-radius: 4px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    text-align: center; /* Center the content */
+  }
+  
+  .seminars h2 {
+    color: #5d4e76; /* Soft purple color for headings */
+    text-align: center; /* Center the heading */
+    margin-bottom: 20px; /* Space below the heading */
+  }
+  
+  .seminars ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+  }
+  
+  .seminar-item {
+    border: 1px solid #ddd; /* Add border for card effect */
+    transition: transform 0.2s; /* Smooth transition for hover effect */
+    }
+
+.seminar-item:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+  
+  .seminar-details h3 {
+    margin: 0; /* Remove default margin */
+    color: #5d4e76; /* Soft purple color for titles */
+  }
+  
+  .seminar-details p {
+    margin: 5px 0 0; /* Space above the date */
+    color: #333; /* Darker text for readability */
+  }
+  
+  .pagination {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center the buttons horizontally */
+    margin-top: 20px; /* Add some space above the pagination */
+    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+  }
+
+  .pagination button {
+    margin: 0 3px; /* Reduce space between buttons */
+    padding: 8px 12px; /* Adjust padding for smaller touch targets */
+    font-size: 0.9rem; /* Slightly smaller font size for mobile */
+    border: 1px solid transparent; /* Add border for button */
+    background-color: #5d4e76; /* Button background color */
+    color: white; /* Button text color */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0.3s, border 0.3s; /* Smooth transitions */
+  }
+
+  .pagination button:hover {
+    background-color: #4a3b5d; /* Darker shade on hover */
+  }
+
+  .pagination button:disabled {
+    background-color: #ccc; /* Gray background for disabled buttons */
+    cursor: not-allowed; /* Change cursor for disabled buttons */
+  }
+
+  .pagination button.active {
+    border: 1px solid #007bff; /* Highlight active button */
+    background-color: white; /* Active button background */
+    color: #5d4e76; /* Active button text color */
+  }
+  @media (max-width: 480px) {
+    .pagination button {
+      padding: 6px 10px; /* Smaller padding for very small screens */
+      font-size: 0.8rem; /* Smaller font size for very small screens */
+    }
+  }

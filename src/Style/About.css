@@ -1,37 +1,37 @@
 /* About.css */
 .about {
-  background: #f5d0ff; /* Soft pastel pink background */
-  padding: 60px 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  animation: fadeIn 1.5s ease-out;
+  background-color: #f0f0f0; /* Light gray background for tech feel */
+  padding: 20px; /* Add padding for spacing */
+  border-radius: 8px; /* Rounded corners */
+  font-family: 'Courier New', Courier, monospace; /* Monospaced font */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
 }
 
-.about h2 {
-  font-size: 2.5rem;
-  color: #5d4e76;
-  text-align: center;
-}
-.about h3 {
-  color: #5d4e76;
-  text-align: center;
+.about h2, .about h3 {
+  color: #5d4e76; /* Soft purple color for headings */
+  text-transform: uppercase; /* Uppercase for a modern look */
 }
 
-.about p {
-  font-size: 1.2rem;
-  color: #666;
-  text-align: center;
-  margin-top: 20px;
+.about p, .about ul {
+  color: #333; /* Darker text for better readability */
 }
 
 .about ul {
-  text-align: left;
-  margin-top: 30px;
+  list-style-type: square; /* Change list style for a tech look */
 }
 
 .about ul li {
-  font-size: 1.1rem;
-  margin: 10px 10;
+  margin: 5px 0; /* Space between list items */
+}
+
+.about a {
+  color: #5d4e76; /* Link color matching headings */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.about a:hover {
+  color: #333; /* Darker color on hover for contrast */
 }
 
 @keyframes fadeIn {
