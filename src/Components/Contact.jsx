@@ -8,7 +8,7 @@ function Contact() {
       <h2>Contact</h2>
       <p>Feel free to reach out to me:</p>
       <ul>
-        <li>Email: your-email@example.com</li>
+        <li>Email: drizirania@gmail.com</li>
         <li>LinkedIn: <a href="https://www.linkedin.com/in/ourania-ntrizi/" target="_blank" rel="noopener noreferrer">your-profile</a></li>
         <li>GitHub: <a href="https://github.com/raniadrz" target="_blank" rel="noopener noreferrer">yourusername</a></li>
       </ul>
