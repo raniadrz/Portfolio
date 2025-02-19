@@ -39,9 +39,11 @@
   
   .pagination {
     display: flex; /* Use flexbox for alignment */
-    justify-content: center; /* Center the buttons horizontally */
+    justify-content: flex-start; /* Align buttons to the start */
     margin-top: 20px; /* Add some space above the pagination */
-    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+    flex-wrap: nowrap; /* Prevent wrapping of buttons */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    padding: 10px 0; /* Add padding for better spacing */
   }
 
   .pagination button {
