@@ -21,42 +21,41 @@ function Projects() {
       demo: "https://mypetshop.vercel.app/"
     },
     {
-    title: "Project App",
+    title: "New Project Coming soon",
     description: "Description ",
     tech: "tech",
     link: "https://github.com/",
     demo: "https://vercel.app/"
     },
     {
-      title: "Project App",
+      title: "New Project Coming soon",
       description: "Description ",
       tech: "tech",
       link: "https://github.com/",
       demo: "https://vercel.app/"
       },
       {
-        title: "Project App",
+        title: "New Project Coming soon",
         description: "Description ",
-        tech: "tech",
+        tech: "Technologies",
         link: "https://github.com/",
         demo: "https://vercel.app/"
         },
         {
-          title: "Project App",
+          title: "New Project Coming soon",
           description: "Description ",
-          tech: "tech",
+          tech: "Technologies",
           link: "https://github.com/",
           demo: "https://vercel.app/"
           },
           {
-            title: "Project App",
+            title: "New Project Coming soon",
             description: "Description ",
-            tech: "tech",
+            tech: "Technologies",
             link: "https://github.com/",
             demo: "https://vercel.app/"
             },
-    
-    
+  
     // Add more projects as needed
   ];
 
