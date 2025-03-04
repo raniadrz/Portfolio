@@ -71,6 +71,7 @@ function Projects() {
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   return (
+
     <section id="projects" className="projects">
       <h2>My Projects</h2>
       <div className="project-list">

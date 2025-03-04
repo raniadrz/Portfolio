@@ -1,30 +1,69 @@
 /* Home.css */
 .home {
-  text-align: center;
-  padding: 80px 20px;
-  animation: fadeIn 1s ease-out; /* Fade-in animation */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
+  padding: 0 5rem;
+  color: white;
+  
+}
+
+.home-content {
+  flex: 1;
+  max-width: 600px;
+  
 }
 
 .home h1 {
-  color: #5d4e76; /* Soft purple */
+  color: #670bfb; /* Soft purple */
   font-size: 3rem;
 }
 
 .home p {
   font-size: 1.2rem;
-  color: #5d4e76;
-  margin-top: 20px;
+  color: #670bfb;
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.highlight {
+  color: #e37dd2; /* Or any accent color you prefer */
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  color: #888;
+}
+
+.avatar-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.avatar-container img {
+  max-width: 15rem;
+  height: auto;
+}
+
+.cta-button {
+  padding: 1rem 2rem;
+  background-color: #670bfb;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(103, 11, 251, 0.3);
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(103, 11, 251, 0.4);
+  background-color: #5a0ae0;
 }
 
 .loading {

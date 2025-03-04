@@ -1,50 +1,81 @@
 .seminars {
     background-color: #f0f0f0; /* Light gray background for consistency */
-    padding: 2% 10%; /* Adjusted padding to reduce top and bottom space */
-    border-radius: 4px; /* Rounded corners */
+    padding: 20px; /* Match Projects padding */
+    border-radius: 8px; /* Match Projects border-radius */
+    font-family: 'Courier New', Courier, monospace; /* Add monospaced font */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
     text-align: center; /* Center the content */
   }
   
-  .seminars h2 {
-    color: #5d4e76; /* Soft purple color for headings */
-    text-align: center; /* Center the heading */
-    margin-bottom: 20px; /* Space below the heading */
-  }
+
+
+.seminars h2 {
+  color: #5d4e76; /* Match Projects heading color */
+  font-size: 2rem; /* Added specific font size */
+  font-weight: 600; /* Added semi-bold weight */
+  margin-bottom: 30px; /* Increased spacing */
+}
+
   
   .seminars ul {
     list-style-type: none; /* Remove default list styling */
     padding: 0; /* Remove padding */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  
   }
   
   .seminar-item {
-    border: 1px solid #ddd; /* Add border for card effect */
-    transition: transform 0.2s; /* Smooth transition for hover effect */
-    }
+    background-color: white;
+    border: 1px solid #e0e0e0; /* Lighter border color */
+    border-radius: 8px; /* Added rounded corners */
+    padding: 20px; /* Added padding */
+    transition: all 0.3s ease; /* Smoother transition */
+    animation: fadeIn 0.5s ease-out; /* Add fadeIn animation */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 .seminar-item:hover {
-    transform: scale(1.05); /* Slightly enlarge on hover */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+    transform: translateY(-2px); /* More subtle hover effect */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Softer shadow */
 }
-  
   .seminar-details h3 {
     margin: 0; /* Remove default margin */
     color: #5d4e76; /* Soft purple color for titles */
+    font-size: 1.5rem;
   }
   
   .seminar-details p {
     margin: 5px 0 0; /* Space above the date */
     color: #333; /* Darker text for readability */
+    line-height: 1.4;
   }
   
   .pagination {
     display: flex; /* Use flexbox for alignment */
     justify-content: flex-start; /* Align buttons to the start */
-    margin-top: 20px; /* Add some space above the pagination */
+    margin-top: 20px; /* Add space above pagination */
     flex-wrap: nowrap; /* Prevent wrapping of buttons */
     overflow-x: auto; /* Enable horizontal scrolling */
     padding: 10px 0; /* Add padding for better spacing */
-  }
+}
+.seminars {
+  padding: 40px;
+  margin: 20px;
+  animation: fadeIn 1sease-out;
+}
+
 
   .pagination button {
     margin: 0 3px; /* Reduce space between buttons */
@@ -73,8 +104,20 @@
     color: #5d4e76; /* Active button text color */
   }
   @media (max-width: 480px) {
+    .seminars {
+      padding: 15px;
+    }
+
+    .seminars h2 {
+      font-size: 1.75rem;
+    }
+
+    .seminar-details h3 {
+      font-size: 1.25rem;
+    }
+
     .pagination button {
-      padding: 6px 10px; /* Smaller padding for very small screens */
-      font-size: 0.8rem; /* Smaller font size for very small screens */
+      padding: 6px 10px;
+      font-size: 0.8rem;
     }
   }

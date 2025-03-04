@@ -2,14 +2,20 @@ import React, { useEffect, useState } from 'react';
 import '../Style/Home.css';
 import '../Style/Button.css';
 import loadingImage from './heart.gif';
+import avatarImage from './avatar.png';
 
 function Home() {
   const [loading, setLoading] = useState(true);
 
+  const handleContactClick = () => {
+    const contactSection = document.getElementById('contact');
+    contactSection?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 3000); // 3 seconds loading time
+    }, 3000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -22,9 +28,15 @@ function Home() {
         </div>
       )}
       <section id="home" className="home">
-        <h1>Hi, I'm Ourania Ntrizi </h1>
-        <p>I'm a Junior React Developer with a passion for creating interactive web applications.</p>
-        <p>Welcome to my portfolio!</p>
+        <div className="home-content">
+          <h1>Hey! I'm <span className="highlight">Ourania Ntrizi</span></h1>
+          <p className="subtitle">I'm a passionate Software Developer</p>
+          <button className="cta-button" onClick={handleContactClick}>Contact Me</button>
+        </div>
+        {/* Add your avatar image here */}
+        <div className="avatar-container">
+          <img src={avatarImage} alt="Developer Avatar" />
+        </div>
       </section>
     </>
   );

@@ -1,13 +1,17 @@
 /* Projects.css */
 .projects {
-  background-color: #f0f0f0; /* Light gray background */
-  padding: 20px; /* Add padding for spacing */
-  border-radius: 8px; /* Rounded corners */
-  font-family: 'Courier New', Courier, monospace; /* Monospaced font */
+  background-color: #f0f0f0; /* Light gray background for consistency */
+  padding: 20px; /* Match Projects padding */
+  border-radius: 8px; /* Match Projects border-radius */
+  font-family: 'Courier New', Courier, monospace; /* Add monospaced font */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  text-align: center; /* Center the content */
 }
+
 
 .projects h2 {
   color: #5d4e76; /* Soft purple color for headings */
+  padding: 20px;
 }
 
 .project-list {
