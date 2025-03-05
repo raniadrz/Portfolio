@@ -31,7 +31,7 @@ function Home() {
         <div className="home-content">
           <h1>Hey! I'm <span className="highlight">Ourania Ntrizi</span></h1>
           <p className="subtitle">I'm a passionate Software Engineer </p>
-          <h3 className="subtitle">I like Coding 👩‍💻 & Coffe ☕️  </h3>
+          <p className="subtitle">I like Coding 👩‍💻 & Coffe ☕️  </p>
 
           <button className="cta-button" onClick={handleContactClick}>Contact Me</button>
         </div>
