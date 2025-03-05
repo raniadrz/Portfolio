@@ -7,7 +7,7 @@ function About() {
     <section id="about" className="about">
       <h2>About Me</h2>
       <p>
-        I'm a junior React developer who loves building modern web apps. I specialize in
+        I'm a Software engineer  who loves building modern web apps. I specialize in
         creating clean and interactive UI using React.
       </p>
       <h3>
